@@ -1,0 +1,23 @@
+Python program to find smallest number in a list
+Using function 
+Input : list1 = [5, 7, 9, 14, 10, 20, 4] 
+Output : 4
+
+
+
+
+def find_smallest_number(list):
+    smallest = list[0]
+    for number in list:
+        if number < smallest:
+            smallest = number
+    return smallest
+
+# Example list
+list1 = [5, 7, 9, 14, 10, 20, 4]
+
+# Call the function to find the smallest number
+smallest_number = find_smallest_number(list1)
+
+# Print the smallest number
+print("The smallest number in the list is:", smallest_number)
