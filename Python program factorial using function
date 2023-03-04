@@ -1,0 +1,31 @@
+Python Program for factorial of a number using function, loop and if else conditions.
+For example factorial of 5 is 5*4*3*2*1 which is 120
+Input =5
+Output =120
+
+
+
+
+# Using function
+def factorial(num):
+    if num == 0:
+        return 1
+    else:
+        return num * factorial(num-1)
+
+# Using loop
+def factorial(num):
+    result = 1
+    for i in range(1, num+1):
+        result *= i
+    return result
+
+# Example input
+num = 5
+
+# Using function
+print("Factorial of", num, "using function:", factorial(num))
+
+# Using loop
+print("Factorial of", num, "using loop:", factorial(num))
+
