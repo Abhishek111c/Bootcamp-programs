@@ -1,0 +1,19 @@
+Python Program for simple interest
+Simple interest formula is given by: 
+Simple Interest = (P x T x R)/100 
+Where, P is the principal amount 
+T is the time  
+R is the rate.
+
+
+
+# Get user inputs for principal, time, and rate
+principal = float(input("Enter the principal amount: "))
+time = float(input("Enter the time in years: "))
+rate = float(input("Enter the interest rate: "))
+
+# Calculate the simple interest
+simple_interest = (principal * time * rate) / 100
+
+# Print the simple interest
+print("The simple interest is:", simple_interest)
