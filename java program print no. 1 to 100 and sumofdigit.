@@ -1,0 +1,39 @@
+// Wap to calculate sum of digital of a number
+
+import java.util.Scanner;
+
+public class SumOfDigits {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int number = input.nextInt();
+        int sum = 0;
+        while (number != 0) {
+            int digit = number % 10;
+            sum += digit;
+            number /= 10;
+        }
+        System.out.println("The sum of digits is: " + sum);
+    }
+}
+
+
+
+// Wap to print. Prime number from 1 to 100.
+
+public class PrimeNumbers {
+    public static void main(String[] args) {
+        for (int i = 2; i <= 100; i++) {
+            boolean isPrime = true;
+            for (int j = 2; j <= Math.sqrt(i); j++) {
+                if (i % j == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+            if (isPrime) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
