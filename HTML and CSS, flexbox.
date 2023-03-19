@@ -1,0 +1,22 @@
+Create a parent div consisting of 4 child divs in a single row using flexbox
+
+HTML:--
+<div class="parent">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>
+
+CSS:--
+.parent {
+  display: flex; /* make the parent a flex container */
+  flex-direction: row; /* make the children flow in a row */
+}
+
+.child {
+  width: 25%; /* set each child to take up 25% of the parent's width */
+  height: 100px; /* set the height */
+  background-color: #ccc; /* set the background color */
+  margin: 5px; /* add some margin between the children */
+}
